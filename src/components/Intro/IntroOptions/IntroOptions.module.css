@@ -1,0 +1,13 @@
+.options {
+  margin: auto;
+}
+
+.options p {
+  font-size: 1.1rem;
+}
+
+.icon {
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+}

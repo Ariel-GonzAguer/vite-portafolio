@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Roboto-Mono";
+  src: local("Roboto_Mono"),
+    url(./fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Sankofa";
+  src: local("Sankofa_Display"),
+    url(./fonts/Sankofa_Display/SankofaDisplay-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"),
+    url(./fonts/Poppins/Poppins-Black.ttf) format("truetype");
+}
+
+html {
+  font-family: "Roboto-Mono", Tahoma, Verdana, sans-serif;
+  font-size: 17px;
+  color: #fffafa;
+  background-color: black;
+  text-align: center;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none !important;
+}
+
