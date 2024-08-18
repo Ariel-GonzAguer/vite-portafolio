@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
-import styles from "./IntroOptions.module.css";
+import DesignStylesButtons from "../DesingStylesButtons/DesingStylesButtons";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from "../IntroPage/IntroPage.module.css";
 
-export default function IntroOptions({ icon, title }) {
+
+export default function Header() {
   const designStyle = useSelector((state) => state.design.design);
   const [color, setColor] = useState(`#${Math.floor(Math.random() * 16777215).toString(16)}`);
 
@@ -14,7 +15,7 @@ export default function IntroOptions({ icon, title }) {
       const interval = setInterval(() => {
         const newColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
         setColor(newColor);
-      }, 5000);
+      }, 3000);
 
       return () => clearInterval(interval);
     }
@@ -22,12 +23,10 @@ export default function IntroOptions({ icon, title }) {
 
   return (
     <section>
-      <FontAwesomeIcon
-        icon={icon}
-        className={`${styles.icon} ${styles[designStyle]}`}
-        style={designStyle === "light" ? { color: color } : null}
-      />
-      <p>{title}</p>
+      <h1 className={styles[designStyle]} style={designStyle === "light" ? { color: color } : null}>Ariel GonzAgüer</h1>
+      <h2 className={styles[designStyle]}>Neat Web Development</h2>
+
+      <DesignStylesButtons />
     </section>
   );
 }

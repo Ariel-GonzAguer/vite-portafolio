@@ -1,17 +1,17 @@
-import { faFolderOpen, faPaperPlane, faStar, faBolt } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faEnvelope, faStar, faBolt } from "@fortawesome/free-solid-svg-icons";
 
 export const introOptions = [
   {
     title: "Projects",
-    icon: faFolderOpen
+    icon: faCode
   },
   {
-    title: "Aboute Me",
+    title: "About Me",
     icon: faStar
   },
   {
     title: "Contact",
-    icon: faPaperPlane
+    icon: faEnvelope
   },
   {
     title: "Articles",

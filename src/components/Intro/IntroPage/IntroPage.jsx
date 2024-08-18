@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./IntroPage.module.css";
 
-import Header from "../../Header/Header";
+import Header from "../../Intro/Header/Header";
 import IntroOption from "../IntroOptions/IntroOption";
 
 import { introOptions } from "../../../data/introOptions";

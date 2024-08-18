@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition: all 0.75s ease-out allow-discrete;
 }
 
 html {
@@ -17,4 +18,22 @@ li {
   font-family: "Roboto-Mono";
   src: local("Roboto_Mono"),
     url(./fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Open_Sans";
+  src: local("OpenSans-Regular"),
+    url(./fonts/Open_Sans/OpenSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Kanit_Regular";
+  src: local("Kanit_Regular"),
+    url(./fonts/Kanit/Kanit_Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Lexend_Mega";
+  src: local("Lexend_Mega_Regular"),
+    url(./fonts/Lexend_Mega/Lexend_Mega_Regular.ttf) format("truetype");
 }
