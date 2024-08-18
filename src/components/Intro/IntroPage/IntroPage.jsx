@@ -7,9 +7,13 @@ import IntroOption from "../IntroOptions/IntroOption";
 
 import { introOptions } from "../../../data/introOptions";
 
+import { useSelector } from "react-redux";
+
 export default function IntroPage() {
+  const designStyle = useSelector((state) => state.design.design);
+
   return (
-    <section className={styles.introPage}>
+    <section className={`${styles.introPage} ${styles[designStyle]}`}>
       <div className={styles.header}>
         <Header />
       </div>

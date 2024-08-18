@@ -6,7 +6,7 @@ import styles from "../../App.module.css";
 
 export default function Header() {
   return (
-    <section className={styles.intro}>
+    <section>
       <h1>Ariel GonzAgüer</h1>
       <h2>Neat Web Development</h2>
 

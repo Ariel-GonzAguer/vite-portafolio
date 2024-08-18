@@ -11,3 +11,10 @@
   width: 100px;
   height: 100px;
 }
+/* styles */
+.light {
+  background: #E4EEFC; /* Color de fondo similar al del contenedor padre */
+  border-radius: 10px; /* Bordes redondeados para un aspecto suave */
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  padding: 20px;
+}

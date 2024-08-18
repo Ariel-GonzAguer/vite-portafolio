@@ -1,8 +1,22 @@
+h1 {
+  font-family: "Roboto-Mono", "Times New Roman", Times, serif;
+  font-size: 3.3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
 .introPage {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-  width: 100vw;
-  height: 100vh;
+  font-family: "Roboto-Mono", Tahoma, Verdana, sans-serif;
+  font-size: 17px;
+  color: #fffafa;
+  background-color: black;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .introPage .header {
@@ -25,6 +39,20 @@
   grid-area: 3/3/4/4;
 }
 
-.option {
+.option section {
   padding: 50px;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  transition: all 0.5s ease-out allow-discrete;
+}
+
+.option:hover section {
+  transform: scale(1.1);
+}
+
+/* styles */
+.light {
+  background-color: #E4EEFC;
+  color: #7A859B;
 }
