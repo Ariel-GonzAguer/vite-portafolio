@@ -5,25 +5,27 @@ This repository is dedicated to my personal portfolio. It is made with React + V
 For the general icons I used the [FontAwsome](https://fontawesome.com/) library, for the internal navigation I used React Router.\
 Other libraries used are:
 - [Sonner](https://sonner.emilkowal.ski/) for the nice and simple design change notification.
-- [Redux TLK ](https://redux-toolkit.js.org/) for a little state management.
+- [Redux TLK](https://redux-toolkit.js.org/) for the state management.
+- [Mocha](https://https://mochajs.org/) and [Chai](https://www.chaijs.com/) for the testing.
 
 I appreciate any constructive criticism or suggestion 🌟
 
 
 ## Features
-Choose an style for the homepage!\
+Choose a style for the homepage!\
 I want to show some of my creativity in the design part of the web development, so the user can see the homepage in these styles/modes:
 - Neumorphism -> clean and soft.
 - Dark -> classic and simple.
 - Light -> colors everywhere!
-- Neubrutalism -> impactful and bold-
+- Neubrutalism -> impactful and bold.
 
 
 ## Tech Stack
 - React.
 - Vite.
-- Redux Toolkit.
+- Redux TLK.
 - React Router DOM.
+- Mocha + Chai.
 
 
 ## License

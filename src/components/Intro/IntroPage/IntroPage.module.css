@@ -12,7 +12,6 @@ input:hover {
 
 .introPage {
   display: grid;
-  /* grid-template: repeat(3, 1fr) / 25% 50% 25%; */
   font-size: 17px;
   color: #fffafa;
   background-color: black;
@@ -24,6 +23,9 @@ input:hover {
 
 .introPage .header {
   grid-area: 2/2/3/3;
+  display: flex;
+  align-items: center;
+  justify-self: center;
 }
 
 .zero {
@@ -215,4 +217,64 @@ input:hover {
   background-color: #be9cf7;
   color: black;
   font-weight: bolder;
+}
+
+/* responsive */
+@media only screen and (max-width: 450px) {
+  .introPage {
+    grid-template: 25% 50% 25% / 27% 46% 27%;
+    height: 100%;
+    width: 100vw;
+    text-align: center;
+
+    & h1 {
+      font-size: 2.5rem;
+    }
+
+    & h2 {
+      font-size: 1.5rem;
+    }
+
+    & input {
+      margin: 5px;
+      font-size: 1.1rem;
+      padding: 5px;
+      cursor: pointer;
+    }
+  }
+
+  /* neubrutalism */
+  .neubrutalism h1 {
+    font-size: 2rem;
+  }
+
+  .neubrutalism h2 {
+    font-size: 1.5rem;
+    border: 2px solid black;
+    background-color: #F68BE0;
+    margin: 10px auto 15px;
+    box-shadow: 2px 2px 5px black, 2px 2px 5px black;
+  }
+
+  .neubrutalism p {
+    font-size: 1rem;
+  }
+
+  .neubrutalism .pChoose {
+    font-size: 1rem;
+    margin: 0px;
+  }
+
+  .neubrutalism input {
+    margin: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+  }
+
+  .neubrutalism input:hover {
+    background-color: #be9cf7;
+    color: black;
+    font-weight: bolder;
+  }
+
 }

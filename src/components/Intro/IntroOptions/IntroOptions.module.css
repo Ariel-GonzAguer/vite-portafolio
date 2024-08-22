@@ -1,5 +1,5 @@
 .icon {
-  margin-bottom: 10px;
+  /* margin: 10px; */
   width: 100px;
   height: 100px;
   cursor: pointer;
@@ -13,13 +13,21 @@
   border-radius: 100px; /* Bordes redondeados para un aspecto suave */
   box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
   padding: 20px;
+  
 }
 
 .neubrutalism {
-  color: #FF4910;
-  background-color: #7DFAFF;
+  color: #ff4910;
+  background-color: #7dfaff;
   border: 4px solid black;
   box-shadow: 2px 2px 5px black, 2px 2px 5px black;
   padding: 15px;
   margin: 10px auto;
+}
+
+@media only screen and (max-width: 450px) {
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
 }

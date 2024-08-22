@@ -21,6 +21,7 @@ export default function IntroOptions({ icon, title }) {
   }, [designStyle]);
 
   return (
+    
     <section>
       <FontAwesomeIcon
         icon={icon}

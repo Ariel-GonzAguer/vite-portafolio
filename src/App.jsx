@@ -5,7 +5,7 @@ import IntroPage from "./components/Intro/IntroPage/IntroPage";
 export default function App() {
 
   return (
-    <section>
+    <section className="app"> {/*this style is in index.css*/}
       <IntroPage />
     </section>
   );
