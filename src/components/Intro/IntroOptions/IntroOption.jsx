@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import { NavLink } from 'react-router-dom'
 
 import styles from "./IntroOptions.module.css";
 
@@ -22,13 +23,13 @@ export default function IntroOptions({ icon, title }) {
 
   return (
     
-    <section>
+    <NavLink to={`/${title}`} className={styles.introOption}>
       <FontAwesomeIcon
         icon={icon}
         className={`${styles.icon} ${styles[designStyle]}`}
         style={designStyle === "light" ? { color: color } : null}
       />
       <p>{title}</p>
-    </section>
+    </NavLink>
   );
 }

@@ -6,7 +6,7 @@ export const introOptions = [
     icon: faCode
   },
   {
-    title: "About Me",
+    title: "About-Me",
     icon: faStar
   },
   {

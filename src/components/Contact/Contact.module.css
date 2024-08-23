@@ -1,0 +1,90 @@
+.contactSection {
+  margin: 50px auto;
+  text-align: center;
+  width: 60%;
+  height: 100%;
+  line-height: 1.5rem;
+  border: 5px solid whitesmoke;
+  padding: 55px;
+  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactH2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.contactSection p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.contactLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.githubImg {
+  height: 176px;
+  width: auto;
+  padding: 15px;
+}
+
+.gmailImg {
+  height: 166px;
+  width: auto;
+  padding: 15px;
+}
+
+.linkedinImg {
+  height: 146px;
+  width: auto;
+  padding: 25px;
+}
+
+.githubImg,
+.gmailImg,
+.linkedinImg {
+  transition: all 1s allow-discrete;
+  border-radius: 50%;
+  border: 0px solid whitesmoke;
+}
+
+.linkedinImg:hover,
+.gmailImg:hover,
+.githubImg:hover {
+  border: 5px solid whitesmoke;
+  margin: 0 5px;
+}
+
+/* media queries */
+@media only screen and (max-width: 450px) {
+  .contactSection {
+    width: 95%;
+    
+    padding: 20px;
+  }
+
+  .githubImg {
+    height: 136px;
+    width: auto;
+    padding: 10px;
+  }
+  
+  .gmailImg {
+    height: 126px;
+    width: auto;
+    padding: 10px;
+  }
+  
+  .linkedinImg {
+    height: 106px;
+    width: auto;
+    padding: 10px;
+  }
+}

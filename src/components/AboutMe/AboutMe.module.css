@@ -1,0 +1,40 @@
+.aboutMeDiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  height: 100%;
+  margin: 50px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.h2 {
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.aboutMeDiv p {
+  line-height: 1.6rem;
+}
+
+a {
+  color: pink;
+}
+
+/* media queries */
+@media only screen and (max-width: 450px) {
+  .aboutMeDiv {
+    margin: 50px auto;
+    width: 95%;
+    padding: 20px;
+    height: 100%;
+    border: 5px solid whitesmoke;
+  }
+
+
+  .h2 {
+    font-size: 1.8rem;
+  }
+}
+

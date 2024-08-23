@@ -187,6 +187,11 @@ input:hover {
   font-family: "Lexend_Mega", serif;
   font-size: 2.1rem;
   color: black;
+  border: 2px solid black;
+  background-color: #F68BE0;
+  margin: 10px auto 15px;
+  box-shadow: 2px 2px 5px black, 2px 2px 5px black;
+  width: 100%;
 }
 
 .neubrutalism p {
@@ -250,10 +255,6 @@ input:hover {
 
   .neubrutalism h2 {
     font-size: 1.5rem;
-    border: 2px solid black;
-    background-color: #F68BE0;
-    margin: 10px auto 15px;
-    box-shadow: 2px 2px 5px black, 2px 2px 5px black;
   }
 
   .neubrutalism p {
