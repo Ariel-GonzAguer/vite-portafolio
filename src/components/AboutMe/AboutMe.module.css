@@ -7,6 +7,16 @@
   margin: 50px auto;
   align-items: center;
   justify-content: center;
+
+  & a {
+    color: pink;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid whitesmoke;
+      padding: 2px;
+    }
+  }
 }
 
 .h2 {
@@ -18,23 +28,22 @@
   line-height: 1.6rem;
 }
 
-a {
-  color: pink;
+.technologiesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* media queries */
 @media only screen and (max-width: 450px) {
   .aboutMeDiv {
-    margin: 50px auto;
+    margin: 0 auto;
     width: 95%;
     padding: 20px;
     height: 100%;
-    border: 5px solid whitesmoke;
   }
-
 
   .h2 {
     font-size: 1.8rem;
   }
 }
-
