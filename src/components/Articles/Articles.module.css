@@ -16,4 +16,26 @@
     margin-bottom: 20px;
     width: 60%;
   }
+
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+
+    & .article {
+      border: 5px solid white;
+      margin: 10px;
+      padding: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: whitesmoke;
+        color: #1e1e1e;
+        font-weight: bolder;
+      }
+    }
+  }
 }
