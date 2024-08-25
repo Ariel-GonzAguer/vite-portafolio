@@ -1,7 +1,7 @@
 import React from "react";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
-import styles from "./technologies.module.css";
+import styles from "./Technologies.module.css";
 
 import bootstrap from "/icons/bootstrap.svg";
 import git from "/icons/git.svg";
