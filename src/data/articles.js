@@ -1,46 +1,46 @@
 export const articles = {
   0: {
     title: "article 0",
-    text: "Soy un cero",
+    text: "Comming soon",
   },
   1: {
     title: "article 1",
-    text: "Soy un uno",
+    text: "Comming soon",
   },
   2: {
     title: "article 2",
-    text: "Soy un dos",
+    text: "Comming soon",
   },
   3: {
-    title: "articles 3",
-    text: "Soy un tres",
+    title: "article 3",
+    text: "Comming soon",
   },
   4: {
-    title: "articles 4",
-    text: "Soy un cuatro",
+    title: "article 4",
+    text: "Comming soon",
   },
   5: {
-    title: "articles 5",
-    text: "Soy un cinco",
+    title: "article 5",
+    text: "Comming soon",
   },
   6: {
-    title: "articles 6",
-    text: "Soy un seis",
+    title: "article 6",
+    text: "Comming soon",
   },
   7: {
-    title: "articles 7",
-    text: "Soy un siete",
+    title: "article 7",
+    text: "Comming soon",
   },
   8: {
-    title: "articles 8",
-    text: "Soy un ocho",
+    title: "article 8",
+    text: "Comming soon",
   },
   9: {
-    title: "articles 9",
-    text: "Soy un nueve",
+    title: "article 9",
+    text: "Comming soon",
   },
   10: {
-    title: "articles 10",
-    text: "Soy un diez",
+    title: "article 10",
+    text: "Comming soon",
   },
 };

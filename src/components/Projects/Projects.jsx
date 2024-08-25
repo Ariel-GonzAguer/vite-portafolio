@@ -10,7 +10,7 @@ export default function ProjectsContainer() {
   const [currentProjectInfo, setCurrentProjectInfo] = useState("");
 
   return (
-    <section className={styles.projectsSection}>
+    <section className={`${styles.projectsSection} ${styles.slideInFwdCenter}`}>
       <h2>Check out this projects!</h2>
       <div className={styles.projectsContainer}>
         {projects.map((project) => (

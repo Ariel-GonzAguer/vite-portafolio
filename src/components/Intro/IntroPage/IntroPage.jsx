@@ -13,7 +13,7 @@ export default function IntroPage() {
   const designStyle = useSelector((state) => state.design.design);
 
   return (
-    <section className={`${styles.introPage} ${styles[designStyle]}`}>
+    <section className={`${styles.introPage} ${styles[designStyle]} ${styles.slideInFwdCenter}`}>
       <div className={styles.header}>
         <Header />
       </div>

@@ -31,13 +31,15 @@ export default function DesingStylesButtons() {
     toast(
       `Great! This page will be in ${value} mode. The other sections will be ${
         value === "dark" ? "well, in dark mode too" : " in dark mode"
-      }`
+      }`, {
+        duration: 3000,
+      }
     );
   }
 
   return (
     <>
-      <Toaster />
+      <Toaster position="bottom-center" closeButton visibleToasts={2} />
       <p
         className={`${styles.designStyle} ${styles.pChoose}`}
         style={designStyle === "light" ? { color: 'green' } : null}

@@ -15,6 +15,8 @@ import SingleArticle from "./components/Articles/SingleArticle";
 
 import IntroPage from "./components/Intro/IntroPage/IntroPage";
 
+import { ContactFormEmailJS } from "./components/Contact/ContactFormEmailJS";
+
 export default function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -23,6 +25,8 @@ export default function App() {
         <Route path="About-Me" element={<AboutMe />} />
         <Route path="Contact" element={<Contact />} />
         <Route path="Projects" element={<Projects />} />
+
+        <Route path="emailJS" element={<ContactFormEmailJS />} />
 
         <Route path="Articles" element={<Articles />} />
         <Route path="Articles/:title" element={<SingleArticle />} />

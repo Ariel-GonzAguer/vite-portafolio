@@ -5,7 +5,7 @@
   padding: 4px;
   cursor: pointer;
   font-weight: bolder;
-  position: relative;
+  position: sticky;
   bottom: 0px;
   left: 0px;
 
@@ -14,3 +14,10 @@
     color: black;
   }
 }
+
+@media (min-width: 1025px) {
+  .backBTN {
+    position: fixed;
+  }
+}
+
