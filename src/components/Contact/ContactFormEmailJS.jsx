@@ -30,7 +30,7 @@ export const ContactFormEmailJS = () => {
 
   return (
     <>
-      <Toaster richColors position="top-right" closeButton />
+      <Toaster richColors position="bottom-center" closeButton />
       <form ref={form} onSubmit={sendEmail} className={styles.form}>
         <h3>Send me a message!</h3>
 
