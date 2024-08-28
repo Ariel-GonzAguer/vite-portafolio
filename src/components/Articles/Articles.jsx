@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { nanoid } from "@reduxjs/toolkit";
 
-import { articles } from "../../data/articles";
+import { articles } from "../../data/articlesData";
 
 import styles from "./Articles.module.css";
 
@@ -14,7 +14,8 @@ export default function Article() {
       <h2>Welcome to the articles section</h2>
       <p>
         Here I share some thoughts, curiosities and lessons that I have learned
-        during my journey as a Front End Developer.
+        during my journey as a Front End Developer.<br /> 
+        <strong>All the articles here will be writed in spanish!</strong>
       </p>
       <ul>
         {articlesData.map((art) => {

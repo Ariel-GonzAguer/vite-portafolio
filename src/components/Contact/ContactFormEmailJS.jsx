@@ -21,7 +21,9 @@ export const ContactFormEmailJS = () => {
         }
       );
 
-      toast.success("Your message has been sent successfully. I will contact you as soon as possible.");
+      toast.success(
+        "Your message has been sent successfully. I will contact you as soon as possible."
+      );
       e.target.reset();
     } catch (error) {
       toast.error("Oh no! Something went wrong. Please try again later.");
@@ -35,15 +37,41 @@ export const ContactFormEmailJS = () => {
         <h3>Send me a message!</h3>
 
         <label htmlFor="user_name">Name</label>
-        <input type="text" name="user_name" id="user_name" required />
+        <input
+          type="text"
+          name="user_name"
+          id="user_name"
+          aria-required="true"
+          aria-label="Your full name"
+          required
+        />
 
         <label htmlFor="user_email">Email</label>
-        <input type="email" name="user_email" id="user_email" required />
+        <input
+          type="email"
+          name="user_email"
+          id="user_email"
+          aria-required="true"
+          aria-label="Your email address"
+          required
+        />
 
         <label htmlFor="message">Message</label>
-        <textarea name="message" required rows="10" cols="32" id="message" />
+        <textarea
+          name="message"
+          rows="10"
+          cols="32"
+          id="message"
+          aria-required="true"
+          aria-label="Your message"
+          required
+        />
 
-        <input type="submit" value="SEND MESSAGE" />
+        <input
+          type="submit"
+          value="SEND MESSAGE"
+          aria-label="Send your message"
+        />
       </form>
     </>
   );
