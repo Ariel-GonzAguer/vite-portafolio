@@ -57,12 +57,11 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 100px;
   width: 70%;
   height: 1fr;
   border: 5px dotted whitesmoke;
   padding: 25px;
-  margin-bottom: 50px;
 
   & h3 {
     font-size: 1.5rem;

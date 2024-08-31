@@ -7,10 +7,14 @@ export default function Root() {
   const navigate = useNavigate();
   const location = useLocation();
   return (
-    <section>
-      <Outlet />
+    <section className={styles.rootContainer}>
+      <div className={styles.content}>
+        <Outlet />
+      </div>
       {location.pathname !== "/" && (
-          <button className={styles.backBTN} onClick={() => navigate(-1)}>Go back!</button>
+        <button className={styles.backBTN} onClick={() => navigate(-1)}>
+          Go back!
+        </button>
       )}
     </section>
   );

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
-import DesignStylesButtons from "../DesingStylesButtons/DesingStylesButtons";
+import DesignStylesButtons from "../DesignStylesButtons/DesignStylesButtons";
 
 import styles from "../IntroPage/IntroPage.module.css";
 

@@ -17,15 +17,15 @@
       padding: 2px;
     }
   }
-}
 
-.h2 {
-  font-size: 2.1rem;
-  margin-bottom: 1.5rem;
-}
+  & .h2 {
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+  }
 
-.aboutMeDiv p {
-  line-height: 1.6rem;
+  & p {
+    line-height: 1.6rem;
+  }
 }
 
 .technologiesContainer {
@@ -41,13 +41,12 @@
     width: 95%;
     padding: 20px;
     height: 100%;
-  }
 
-  .h2 {
-    font-size: 1.8rem;
+    & .h2 {
+      font-size: 1.8rem;
+    }
   }
 }
-
 
 /* animations */
 .slideInFwdCenter {

@@ -21,22 +21,10 @@ export const articles = {
           con Back End, existen librerías que nos ayudan a lograrlo desde el
           lado del cliente.
           <br />
-          Hoy vamos a usar EmailJS, una librería que hace mucho tenía guardada
-          en mis marcadores para verla después, pero que hasta poco que
-          actualice mi portafolio, utilicé, y la verdad no puedo pedir más,
-          soluciona mi problema.
-          <br />
-          <br />
-          NOTA: el componente Contact.jsx en este tutorial no es exactamente el
-          mismo que hay en mi portafolio, esto porque este tutorial lo hago
-          desde una Mac del trabajo, y la verdad, no me gusta Apple, para nada,
-          no me parece nada intuitivo como me dijeron, prefiero mil veces
-          Windows y Linux, pero… ese tema es para otro día. Pueden ver el
-          componente real, en mi{" "}
-          <a href="https://github.com/Ariel-GonzAguer" target="_blank">
-            GitHub.
-          </a>
-          <br />
+          Hoy vamos a usar <strong>EmailJS</strong>, una librería que hace mucho
+          tenía guardada en mis marcadores para verla después, pero que hasta
+          poco que actualice mi portafolio, utilicé, y la verdad no puedo pedir
+          más, soluciona mi problema.
           <br />
           Primero vamos a conocer un poco sobre EmailJS, después vamos a
           configurar la cuenta y crear los templates. Veremos el componente de
@@ -45,8 +33,7 @@ export const articles = {
           caso de uso, además agregaremos algunos atributos que mejoren la
           accesibilidad del componente.
         </p>
-        <br />
-        <br />
+
         <p>
           **Conocimientos Prerrequisito (todos en realidad en nivel muy básico):
         </p>
@@ -55,9 +42,8 @@ export const articles = {
           <li>2. Uso de NPM. Para instalar librerías.</li>
           <li>3. Uso de NodeJS. Para ejecutar comandos en la consola.</li>
         </ul>
-        <br />
-        <br />
-        <p>Herramientas que usaremos:</p>
+
+        <p>**Herramientas que usaremos:</p>
         <ul>
           <li>1. VS Code. Como nuestro IDE.</li>
           <li>2. Vite. Como herramienta de compilación.</li>
@@ -75,8 +61,7 @@ export const articles = {
           <br />
           Sin más que agregar, comencemos...
         </p>
-        <br />
-        <br />
+
         <h3>
           {"<"} EmailJS {"/>"}
         </h3>
@@ -92,6 +77,7 @@ export const articles = {
           >
             del sitio oficial de EmailJS
           </a>
+          .
           <br />
           <br />
           Esta librería nos permite adjuntar imágenes a los correos, enviar un
@@ -100,17 +86,16 @@ export const articles = {
           que el cliente nos pueda enviar un mensaje desde nuestra web, y reciba
           un mensaje de confirmación al correo que proporciona.
         </p>
-        <br />
-        <br />
+
         <h3>
           {"<"} Configuración de cuenta y Servicio {"/>"}
         </h3>
         <p>
-          Lo primero es crear una cuenta en
+          Lo primero es crear una cuenta en{" "}
           <a href="https://dashboard.emailjs.com/sign-up" target="_blank">
-            EmailJS.
+            EmailJS
           </a>
-          Cuando ya tenemos nuestra cuenta, podemos acceder al dashboard de
+          . Cuando ya tenemos nuestra cuenta, podemos acceder al dashboard de
           EmailJS donde añadiremos nuestro servicio de correo electrónico.
           Simplemente presionamos <strong>Add New Service</strong>, elegimos
           nuestro tipo de servicio, que para el caso de este tutorial será
@@ -120,12 +105,12 @@ export const articles = {
           <br /> Lo siguiente por hacer, en esta misma ventana, es conectar
           nuestro servicio a nuestra cuenta de Gmail. Otorgamos los permisos a
           EmailJS, y después damos click en Create Service. Algo interesante de
-          hacer acá, es dejar seleccionada la opción Send test email to verify
-          configuration, para confirmar que vamos por buen camino. Ahora, en
-          nuestro dashboard, deberíamos ver algo como esto:
+          hacer acá, es dejar seleccionada la opción{" "}
+          <strong>Send test email to verify configuration</strong>, para
+          confirmar que vamos por buen camino. Ahora, en nuestro dashboard,
+          deberíamos ver algo como esto:
         </p>
-        <img src={servicio_terminado} />
-        <br />
+        <img src={servicio_terminado} alt="ejemplo de servicio terminado" />
         <h3>
           {"<"} Creación de Templates {"/>"}
         </h3>
@@ -133,11 +118,10 @@ export const articles = {
         <p>
           Una vez establecido nuestro servicio correctamente, lo siguiente es el
           mensaje que vamos a recibir en nuestro correo. Para hacer esto vamos a
-          la sección Email Templates y hacemos click en Create New Template.
+          la sección <strong>Email Templates</strong> y hacemos click en{" "}
+          <strong>Create New Template</strong>.
           <br />
-          Una vez establecido nuestro servicio correctamente, lo siguiente es el
-          mensaje que vamos a recibir en nuestro correo. Para hacer esto vamos a
-          la sección Email Templates y hacemos click en Create New Template.
+          Importantísimo notar en esta sección:
         </p>
         <ul>
           <li>
@@ -148,22 +132,24 @@ export const articles = {
             ).
           </li>
           <li>
-            • definir el ID del template (este ID también lo usaremos más tarde)
+            • definir el ID del template (este ID también lo usaremos más
+            tarde).
           </li>
         </ul>
+
         <p>Así se mira el template que nos da EmailJS por default:</p>
         <br />
-        <img src={default_template_emailJS} />
+        <img src={default_template_emailJS} alt="template por default" />
         <p>
           En la pestaña de Auto-Replay, por default, no viene nada, pero esto lo
           cambiaremos después. En la opción de settings le damos un nombre y ID
-          apropiado al template. No olvide llenar el campo de To Email, que es
-          donde recibirá los mensajes enviados desde la página web.
-          <br />
+          apropiado al template. No olvide llenar el campo de{" "}
+          <strong>To Email</strong>, que es donde recibirá los mensajes enviados
+          desde la página web.
           <br />
           Para mi caso de uso, así queda el template:
         </p>
-        <img src={contact_template_emailJS} />
+        <img src={contact_template_emailJS} alt="template de contacto" />
         <p>
           ¡Bastante sencilla! Como solo necesito saber quién me envió un
           mensaje, además del mensaje, con esa configuración estoy satisfecho.
@@ -172,16 +158,15 @@ export const articles = {
           <br />
           La opción de auto-replay la vamos a configurar en el siguiente paso.
         </p>
-        <br />
-        <br />
+
         <h4>b. Auto-Replay: el correo que recibe la persona usuaria.</h4>
         <p>
           Ahora vamos a configurar el template de auto-replay. En realidad, solo
-          se debe hacer lo mismo que en el paso anterior, teniendo en cuenta
-          quien lo va a recibir: la persona usuaria que nos envía un mensaje.
+          se debe hacer lo mismo que en el paso anterior, teniendo en cuenta que
+          es la persona usuaria quién recibirá este mensaje.
           <br /> Mi auto-replay se mira así:
         </p>
-        <img src={autoreplay_emailJS} />
+        <img src={autoreplay_emailJS} alt="template de auto-replay" />
         <p>
           De nuevo, bastante sencillo. Solo utilizo dos variables dinámicas:
           {" {{"} user_name {"}}"} dentro del mensaje para que no sea tan
@@ -190,8 +175,7 @@ export const articles = {
           esta sección, la persona usuaria nunca recibirá su mensaje de
           confirmación, pues llegará a nuestra bandeja de entrada.
         </p>
-        <br />
-        <br />
+
         <h4>c. Conectar templates</h4>
         <p>
           Ya estamos cerca de entrar a VS Code, pero antes debemos conectar
@@ -210,27 +194,28 @@ export const articles = {
           Pero para tenerlo más claro, así se ve la sección de Auto-Replay de mi
           template_autoreplay:
         </p>
-        <img src={autoreplay_autoreplay_emailJS} />
-        <br />
-        <br />
+        <img
+          src={autoreplay_autoreplay_emailJS}
+          alt="autoreplay de autoreplay"
+        />
+
         <p>Y así se mira la misma sección, pero en mi portafolio_template_1:</p>
-        <br />
-        <img src={autoreplay_contact_emailJS} />
+
+        <img src={autoreplay_contact_emailJS} alt="autoreplay de contacto" />
 
         <p>
           <strong>Antes de escribir el componte…</strong>
         </p>
         <ul>
           <li>
-            • instalar la librería de EmailJS: $ npm install --save
+            • instalar la librería de EmailJS: npm install
             @emailjs/browser
           </li>
           <li>
-            • 3. Opcionalmente, también instalamos sonner: npm install sonner
+            • Opcionalmente, también instalar sonner: npm install sonner
           </li>
         </ul>
-        <br />
-        <br />
+
         <h3>
           {"<"} Componente de ejemplo de EmailJS {"/>"}
         </h3>
@@ -267,16 +252,15 @@ export const articles = {
           por lo que esta no puede saber en el momento si hubo algún error o si
           todo salió bien.
         </p>
-        <br />
-        <br />
+
         <h3>
           {"<"} Componente Personalizado {"/>"}
         </h3>
         <p>
-          Estos detalles los soluciono con los siguientes cambios en mi
+          LOs anteriores detalles los soluciono con los siguientes cambios en mi
           componente
         </p>
-        <img src={componente_final} alt="" />
+        <img src={componente_final} alt="componente final personalizado" />
         <p>Los cambios principales que hice fueron:</p>
         <ul>
           <li>
@@ -288,8 +272,7 @@ export const articles = {
             usuaria.
           </li>
         </ul>
-        <br />
-        <br />
+
         <h3>
           {"<"} Consideraciones {"/>"}
         </h3>
@@ -316,8 +299,7 @@ export const articles = {
             .{" "}
           </li>
         </ul>
-        <br />
-        <br />
+
         <h3>
           {"<"} Siguientes Pasos {"/>"}
         </h3>
@@ -326,8 +308,7 @@ export const articles = {
           <li>• Revisar la documentación completa.</li>
           <li>• Experimentar con las opciones de CAPTCHA.</li>
         </ul>
-        <br />
-        <br />
+
         <h3>
           {"<"} Conclusión {"/>"}
         </h3>
@@ -341,43 +322,43 @@ export const articles = {
     ),
   },
   1: {
-    title: "article 1",
+    title: "Comming soon",
     content: "Comming soon",
   },
   2: {
-    title: "article 2",
+    title: "Comming soon",
     content: "Comming soon",
   },
   3: {
-    title: "article 3",
+    title: "Comming soon",
     content: "Comming soon",
   },
   4: {
-    title: "article 4",
+    title: "Comming soon",
     content: "Comming soon",
   },
   5: {
-    title: "article 5",
+    title: "Comming soon",
     content: "Comming soon",
   },
   6: {
-    title: "article 6",
+    title: "Comming soon",
     content: "Comming soon",
   },
   7: {
-    title: "article 7",
+    title: "Comming soon",
     content: "Comming soon",
   },
   8: {
-    title: "article 8",
+    title: "Comming soon",
     content: "Comming soon",
   },
   9: {
-    title: "article 9",
+    title: "Comming soon",
     content: "Comming soon",
   },
   10: {
-    title: "article 10",
+    title: "Comming soon",
     content: "Comming soon",
   },
 };

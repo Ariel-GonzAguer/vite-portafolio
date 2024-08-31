@@ -19,11 +19,10 @@ export default function TechnologiesContainer() {
     <section className={styles.technologiesSection}>
       <Tooltip id="my-tooltip" />
 
-      <h2 className={styles.techTitle}>Technologies that I use daily</h2>
-      <ul className={styles.technologiesUl}>
+      <h2>Technologies that I use daily</h2>
+      <ul>
         <li className={styles.technologiesLi}>
           <img
-            className={styles.technologiesImg}
             data-tooltip-id="my-tooltip"
             data-tooltip-content="React. Powerfull JavaScript Library"
             data-tooltip-place="top"
@@ -32,7 +31,7 @@ export default function TechnologiesContainer() {
           />
         </li>
 
-        <li className={styles.technologiesLi}>
+        <li>
           <img
             className={styles.technologiesImg}
             data-tooltip-id="my-tooltip"

@@ -3,12 +3,13 @@
   width: 100px;
   height: 100px;
   cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
-.icon:hover {
-  transform: scale(1.1);
-}
-/* styles */
+/* designe styles */
 .neumorphism {
   border-radius: 100px; /* Bordes redondeados para un aspecto suave */
   box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;

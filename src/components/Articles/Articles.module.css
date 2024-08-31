@@ -42,46 +42,18 @@
 }
 
 .singleArticle {
+  margin: 50px 25px;
+  padding: 50px;
+  border: 5px solid white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  margin: 50px auto;
-  padding: 50px;
-  border: 5px solid white;
+  line-height: 2rem;
 
   & h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-  }
-
-  & h3 {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-  }
-  
-  & p {
-    font-size: 1.2rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-  }
-
-  & a {
-    color: pink;
-    cursor: pointer;
-  }
-
-  & li {
-    font-size: 1.2rem;
-  }
-
-  & img {
-    margin: 20px auto;
   }
 
   & .content {
@@ -90,31 +62,58 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 auto;
+    max-width: 100%;
+
+    & h3 {
+      font-size: 1.5rem;
+      margin: 45px auto 10px;
+    }
+
+    & h4 {
+      font-size: 1.2rem;
+      margin: 15px auto 5px;
+    }
+
+    & img {
+      margin: 10px auto;
+      border-radius: 5px;
+    }
+
+    & p {
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 10px auto;
+      width: 100%;
+    }
+
+    & a {
+      color: pink;
+      cursor: pointer;
+    }
+
+    & li {
+      font-size: 1.2rem;
+    }
+
+    & ul {
+      margin: auto auto 20px;
+    }
   }
 }
 
 @media only screen and (max-width: 450px) {
-  .articlesSection { 
-    & p {
-      width: 100%;
-    }
-  }
-
   .singleArticle {
-    width: 100vw;
-    & .content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+    padding: 10px;
+    border: unset;
+    text-align: center;
+
+    & img {
+      width: 100%;
+      height: 100%;
       margin: 0 auto;
     }
   }
 }
-
-
 
 /* animations */
 .slideInFwdCenter {
