@@ -42,7 +42,8 @@
 .linkedinImg {
   transition: all 1s allow-discrete;
   border-radius: 50%;
-  border: 0px solid whitesmoke;
+  border: 5px solid transparent;
+  margin: 0px 5px;
 }
 
 .linkedinImg:hover,
