@@ -53,7 +53,7 @@ export const projects = [
     icon: faUtensils,
     name: "Cocina Libre Menú",
     href: "https://cocinalibremenu.netlify.app/",
-    text: `This is a small but nice project for a food business of some friends. Keept simple, keep it clean. `,
+    text: `This is a small but nice project for a food business of some folks. For this project I used a React custom hook.\n\Next steps for this project:\n\-add a library for translation.\n\-add more features for accesibility.\n\-find some way to let the costumers make their order from the page.`,
     key: nanoid(),
   },
 ];
