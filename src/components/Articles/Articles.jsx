@@ -15,7 +15,7 @@ export default function Article() {
       <p>
         Here I share some thoughts, curiosities and lessons that I have learned
         during my journey as a Front End Developer.<br /> 
-        <strong>All the articles here will be writed in spanish!</strong>
+        <strong>¡Todos los artículos de esta página estarán escritos en español!</strong>
       </p>
       <ul>
         {articlesData.map((art) => {

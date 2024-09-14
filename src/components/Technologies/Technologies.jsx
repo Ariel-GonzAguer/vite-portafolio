@@ -3,14 +3,12 @@ import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 import styles from "./Technologies.module.css";
 
-import bootstrap from "/icons/bootstrap.svg";
 import git from "/icons/git.svg";
 import zustand from "/icons/zustand.ico";
 import nextJS from "/icons/nextJS.png";
 import react from "/icons/react.svg";
 import typescript from "/icons/typeScript.svg";
 import redux from "/icons/redux.svg";
-import tailwind from "/icons/tailwind.svg";
 import reactrouter from "/icons/reactrouter.svg";
 import netlify from "/icons/netlify.svg";
 
@@ -93,17 +91,6 @@ export default function TechnologiesContainer() {
           <img
             className={styles.technologiesImg}
             data-tooltip-id="my-tooltip"
-            data-tooltip-content="Bootstrap. CSS Framework"
-            data-tooltip-place="top"
-            src={bootstrap}
-            alt="Bootstrap Logo"
-          />
-        </li>
-
-        <li className={styles.technologiesLi}>
-          <img
-            className={styles.technologiesImg}
-            data-tooltip-id="my-tooltip"
             data-tooltip-content="TypeScript. Programming language"
             data-tooltip-place="top"
             src={typescript}
@@ -119,17 +106,6 @@ export default function TechnologiesContainer() {
             data-tooltip-place="top"
             src={nextJS}
             alt="NextJS Logo"
-          />
-        </li>
-
-        <li className={styles.technologiesLi}>
-          <img
-            className={styles.technologiesImg}
-            data-tooltip-id="my-tooltip"
-            data-tooltip-content="Tailwind. CSS Framework"
-            data-tooltip-place="top"
-            src={tailwind}
-            alt="Tailwind Logo"
           />
         </li>
       </ul>
