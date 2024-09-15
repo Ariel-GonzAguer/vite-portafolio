@@ -43,9 +43,9 @@ export const projects = [
 
   {
     icon: faStopwatch,
-    name: "Web-Chrono!",
+    name: "Web-Timers!",
     href: "#",
-    text: `This project was born out of a personal need: My phone only has one timer option and no option to save custom timers.\n\To solve this problem, I created a web app that allows the user to create multiple timers and save them to their device.\n\No more resetting a timer over and over, or only one timer at a time. I can now keep track of the time separately for the boiling pasta and the seitan I'm baking!\n\At the moment the app requires an internet connection to use, but I plan to offer an equal (or slightly simpler, depending on the possibilities offered by technology) option that works offline.\n\It has two design options: Neumorphism and Neobrutalism.\n\Try it here:`,
+    text: `This project was born out of a personal need: My phone only has one timer option and no option to save custom timers.\n\To solve this problem, I created a web app that allows the user to create multiple timers and save them to their device.\n\No more resetting a timer over and over, or only one timer at a time. I can now keep track of the time separately for the boiling pasta and the seitan I'm baking!\n\At the moment the app requires an internet connection to use, but I plan to offer an equal (or slightly simpler, depending on the possibilities offered by technology) option that works offline.\n\Try it here:`,
     key: nanoid(),
   },
 
