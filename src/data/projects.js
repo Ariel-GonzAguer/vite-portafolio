@@ -1,8 +1,8 @@
 import {
   faBurger,
   faShieldCat,
-  faStopwatch,
-  faUtensils
+  faGhost,
+  faUtensils,
 } from "@fortawesome/free-solid-svg-icons";
 import { faRedditAlien } from "@fortawesome/free-brands-svg-icons";
 
@@ -42,10 +42,11 @@ export const projects = [
   },
 
   {
-    icon: faStopwatch,
-    name: "Web-Timers!",
-    href: "#",
-    text: `This project was born out of a personal need: My phone only has one timer option and no option to save custom timers.\n\To solve this problem, I created a web app that allows the user to create multiple timers and save them to their device.\n\No more resetting a timer over and over, or only one timer at a time. I can now keep track of the time separately for the boiling pasta and the seitan I'm baking!\n\At the moment the app requires an internet connection to use, but I plan to offer an equal (or slightly simpler, depending on the possibilities offered by technology) option that works offline.\n\Try it here:`,
+    icon: faGhost,
+    name: "the-Undefined",
+    href: "https://the-undefined.netlify.app/",
+    text: `This project is a website I created to participate in my first hackathon, one organized by Cloudinary and Midudev.\n\
+    The game consists of four Javascript-related challenges. It uses Cloudinary's transformative AI to transform three images that the user uploads to the platform, and to modify an image already on the server using a prompt. \n\In this project I also use Wouter (for routing) and Zustand (state management) for the first time in a full project.\n\Try it here:`,
     key: nanoid(),
   },
 
@@ -53,7 +54,7 @@ export const projects = [
     icon: faUtensils,
     name: "Cocina Libre Menú",
     href: "https://cocinalibremenu.netlify.app/",
-    text: `This is a small but nice project for a food business of some folks.\n\For this project I used a React custom hook.\n\Next steps for this project:\n\-add a library for translation.\n\-add more features for accesibility.\n\-find some way to let the costumers make their order from the page.`,
+    text: `This is a simple, small but nice project for a small food business in San José, Costa Rica.\n\For this project I used a React custom hook for first time.\n\Next steps for this project:\n\-add a library for translation.\n\-add more features for accesibility.\n\-find some way to let the costumers make their order from the page.\n\Look at the menu here:`,
     key: nanoid(),
   },
 ];
