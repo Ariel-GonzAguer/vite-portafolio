@@ -92,11 +92,13 @@
 @media only screen and (max-width: 450px) {
   .projectsContainer {
     width: 95%;
-    padding: 10px;
+    padding: 1rem;
     margin-bottom: 50px;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    text-align: center;
+    gap: 1rem;
   }
 
   .projectIcon {
@@ -114,6 +116,7 @@
 
   .projectDiv {
     margin: 0 10px;
+    flex: 1;
   }
 }
 

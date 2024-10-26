@@ -12,6 +12,7 @@ export default function ProjectsContainer() {
   return (
     <section className={`${styles.projectsSection} ${styles.slideInFwdCenter}`}>
       <h2>Check out this projects!</h2>
+      <p>Click on them to see more info</p>
       <div className={styles.projectsContainer}>
         {projects.map((project) => (
           <div className={styles.projectDiv} key={project.key}>
