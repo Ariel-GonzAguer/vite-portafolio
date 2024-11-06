@@ -34,7 +34,7 @@ export const projects = [
   {
     icon: faShieldCat,
     name: "Michi Cards",
-    href: "https://michicards.netlify.app/",
+    href: "https://michi-cards.netlify.app/",
     text: `This is my favorite project so far!\n\
     With this web app users can create their own Kitty Cat Card Collection!\n\You can create cards similar to other card games like Pokemon, but Cat based.
     Take a screenshot and share it with your friends 😺\n\The card is only yours 😼\n\Made with React, React Router, Redux TLK, this web app is designed to be used on mobile devices, it also uses third-party APIs and ventures into the use of the user's device's Local Storage to save cards created with images from third-party APIs.cUsers can choose everything from the name of the Kitty, the points of each attribute, to the image of your card.\n\Try it out and tell me what you think!`,
