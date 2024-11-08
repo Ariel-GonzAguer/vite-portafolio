@@ -13,7 +13,9 @@ export default function IntroPage() {
   const designStyle = useSelector((state) => state.design.design);
 
   return (
-    <section className={`${styles.introPage} ${styles[designStyle]} ${styles.slideInFwdCenter}`}>
+    <section
+      className={`${styles.introPage} ${styles[designStyle]} ${styles.slideInFwdCenter}`}
+    >
       <div className={styles.header}>
         <Header />
       </div>
@@ -22,6 +24,7 @@ export default function IntroPage() {
         <IntroOption
           icon={introOptions[0].icon}
           title={introOptions[0].title}
+          // className={designStyle === "neumorphism" ? styles.pinkHover : null}
         />
       </div>
 

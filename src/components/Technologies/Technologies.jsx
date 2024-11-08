@@ -11,13 +11,15 @@ import typescript from "/icons/typeScript.svg";
 import redux from "/icons/redux.svg";
 import reactrouter from "/icons/reactrouter.svg";
 import netlify from "/icons/netlify.svg";
+import astro from "/icons/astro.svg";
+import wouter from "/icons/wouter.svg";
 
 export default function TechnologiesContainer() {
   return (
     <section className={styles.technologiesSection}>
       <Tooltip id="my-tooltip" />
 
-      <h2>Technologies that I use daily</h2>
+      <h2>Technologies that I use</h2>
       <ul>
         <li className={styles.technologiesLi}>
           <img
@@ -26,6 +28,17 @@ export default function TechnologiesContainer() {
             data-tooltip-place="top"
             src={react}
             alt="React Logo"
+          />
+        </li>
+
+        <li className={styles.technologiesLi}>
+          <img
+            className={styles.technologiesImg}
+            data-tooltip-id="my-tooltip"
+            data-tooltip-content="Zustand. State Management Library"
+            data-tooltip-place="top"
+            src={zustand}
+            alt="Zustand Logo"
           />
         </li>
 
@@ -44,21 +57,10 @@ export default function TechnologiesContainer() {
           <img
             className={styles.technologiesImg}
             data-tooltip-id="my-tooltip"
-            data-tooltip-content="Redux. State Management Library"
+            data-tooltip-content="Wouter. React Framework for server-side routing"
             data-tooltip-place="top"
-            src={redux}
-            alt="Redux Logo"
-          />
-        </li>
-
-        <li className={styles.technologiesLi}>
-          <img
-            className={styles.technologiesImg}
-            data-tooltip-id="my-tooltip"
-            data-tooltip-content="React Router. React Framework for server-side routing"
-            data-tooltip-place="top"
-            src={reactrouter}
-            alt="React Router Logo"
+            src={wouter}
+            alt="Wouter Router Logo"
           />
         </li>
 
@@ -74,16 +76,16 @@ export default function TechnologiesContainer() {
         </li>
       </ul>
 
-      <h2 className={styles.techTitle}>Technologies I want to learn soon!</h2>
+      <h2>Technologies I want to learn soon!</h2>
       <ul className={styles.technologiesUl}>
         <li className={styles.technologiesLi}>
           <img
             className={styles.technologiesImg}
             data-tooltip-id="my-tooltip"
-            data-tooltip-content="Zustand. State Management Library"
+            data-tooltip-content="Astro. React Framework"
             data-tooltip-place="top"
-            src={zustand}
-            alt="Zustand Logo"
+            src={astro}
+            alt="Astro Logo"
           />
         </li>
 
@@ -106,6 +108,29 @@ export default function TechnologiesContainer() {
             data-tooltip-place="top"
             src={nextJS}
             alt="NextJS Logo"
+          />
+        </li>
+      </ul>
+      <h2>Technologies I have used</h2>
+      <ul>
+        <li className={styles.technologiesLi}>
+          <img
+            className={styles.technologiesImg}
+            data-tooltip-id="my-tooltip"
+            data-tooltip-content="Redux. State Management Library"
+            data-tooltip-place="top"
+            src={redux}
+            alt="Redux Logo"
+          />
+        </li>
+        <li className={styles.technologiesLi}>
+          <img
+            className={styles.technologiesImg}
+            data-tooltip-id="my-tooltip"
+            data-tooltip-content="React Router. React Framework for server-side routing"
+            data-tooltip-place="top"
+            src={reactrouter}
+            alt="React Router Logo"
           />
         </li>
       </ul>

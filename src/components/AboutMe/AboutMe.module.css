@@ -11,6 +11,8 @@
   & a {
     color: pink;
     cursor: pointer;
+    border: 1px solid transparent;
+    padding: 2px;
 
     &:hover {
       border: 1px solid whitesmoke;
