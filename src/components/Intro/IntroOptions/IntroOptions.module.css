@@ -39,7 +39,7 @@
   border-radius: 50%;
 
   &:hover {
-    background-image: url("public/imgs/matrix.webp");
+    background-image: url("/imgs/matrix.webp");
   }
 }
 
