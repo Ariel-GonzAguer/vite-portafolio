@@ -13,6 +13,7 @@ import reactrouter from "/icons/reactrouter.svg";
 import netlify from "/icons/netlify.svg";
 import astro from "/icons/astro.svg";
 import wouter from "/icons/wouter.svg";
+import mocha from "/icons/mocha.svg";
 
 export default function TechnologiesContainer() {
   return (
@@ -82,7 +83,7 @@ export default function TechnologiesContainer() {
           <img
             className={styles.technologiesImg}
             data-tooltip-id="my-tooltip"
-            data-tooltip-content="Astro. React Framework"
+            data-tooltip-content="Astro. Web Framework"
             data-tooltip-place="top"
             src={astro}
             alt="Astro Logo"
@@ -131,6 +132,16 @@ export default function TechnologiesContainer() {
             data-tooltip-place="top"
             src={reactrouter}
             alt="React Router Logo"
+          />
+        </li>
+        <li className={styles.technologiesLi}>
+          <img
+            className={styles.technologiesImg}
+            data-tooltip-id="my-tooltip"
+            data-tooltip-content="Mocha. JavaScript test framework"
+            data-tooltip-place="top"
+            src={mocha}
+            alt="Mocha Router Logo"
           />
         </li>
       </ul>

@@ -30,7 +30,11 @@ export default function IntroOptions({ icon, title }) {
       <FontAwesomeIcon
         icon={icon}
         className={`${styles.icon} ${styles[designStyle]} ${
-          designStyle === "neumorphism" ? styles.pinkHover : null
+          designStyle === "neumorphism"
+            ? styles.pinkHover
+            : designStyle === "dark"
+            ? styles.matrixHover
+            : null
         }`}
         style={designStyle === "light" ? { color: color } : null}
       />

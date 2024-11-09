@@ -24,7 +24,6 @@ export default function IntroPage() {
         <IntroOption
           icon={introOptions[0].icon}
           title={introOptions[0].title}
-          // className={designStyle === "neumorphism" ? styles.pinkHover : null}
         />
       </div>
 

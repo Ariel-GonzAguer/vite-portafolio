@@ -16,7 +16,7 @@ export default function Contact() {
           <p>
           I would love to work alongside You and your team.<br />
           Count on me to work alone or shoulder to shoulder with great people.<br />
-          In this moment I can work in person (depending on location) or remotely, full-time, part-time or on a project basis.<br />
+          In this moment I can work in person (depending on location) or remotely, part-time or on a project basis.<br />
           Working together, I know we can create somethig great!.
           </p>
         </div>
