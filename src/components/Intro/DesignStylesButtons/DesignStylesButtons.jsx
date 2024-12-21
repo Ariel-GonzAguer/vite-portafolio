@@ -31,7 +31,8 @@ export default function DesingStylesButtons() {
     toast(
       `Great! This page will be in ${value} mode. The other sections will be ${
         value === "dark" ? "well, in dark mode too" : " in dark mode"
-      }`, {
+      }`,
+      {
         duration: 3000,
       }
     );
@@ -42,7 +43,7 @@ export default function DesingStylesButtons() {
       <Toaster position="bottom-center" closeButton visibleToasts={2} />
       <p
         className={`${styles.designStyle} ${styles.pChoose}`}
-        style={designStyle === "light" ? { color: 'green' } : null}
+        style={designStyle === "light" ? { color: "green" } : null}
       >
         Choose a design style
       </p>
@@ -52,7 +53,19 @@ export default function DesingStylesButtons() {
         name="design-styles"
         value="neumorphism"
         onClick={handleClick}
-        style={designStyle === "light" ? { backgroundColor: color} : null}
+        style={
+          designStyle === "light"
+            ? {
+                backgroundColor: `rgba(${parseInt(
+                  color.slice(1, 3),
+                  16
+                )}, ${parseInt(color.slice(1, 5), 16)}, ${parseInt(
+                  color.slice(1, 7),
+                  16
+                )}, 0.2)`,
+              }
+            : null
+        }
       />
       <label htmlFor="neumorphism" />
 
@@ -62,7 +75,19 @@ export default function DesingStylesButtons() {
         name="design-styles"
         value="dark"
         onClick={handleClick}
-        style={designStyle === "light" ? { backgroundColor: color } : null}
+        style={
+          designStyle === "light"
+            ? {
+                backgroundColor: `rgba(${parseInt(
+                  color.slice(1, 3),
+                  16
+                )}, ${parseInt(color.slice(2, 5), 16)}, ${parseInt(
+                  color.slice(5, 7),
+                  16
+                )}, 0.2)`,
+              }
+            : null
+        }
       />
       <label htmlFor="dark" />
 
@@ -72,7 +97,19 @@ export default function DesingStylesButtons() {
         name="design-styles"
         value="light"
         onClick={handleClick}
-        style={designStyle === "light" ? { backgroundColor: color } : null}
+        style={
+          designStyle === "light"
+            ? {
+                backgroundColor: `rgba(${parseInt(
+                  color.slice(1, 3),
+                  16
+                )}, ${parseInt(color.slice(3, 5), 16)}, ${parseInt(
+                  color.slice(6, 7),
+                  16
+                )}, 0.2)`,
+              }
+            : null
+        }
       />
       <label htmlFor="dark" />
 
@@ -82,7 +119,19 @@ export default function DesingStylesButtons() {
         name="design-styles"
         value="neubrutalism"
         onClick={handleClick}
-        style={designStyle === "light" ? { backgroundColor: color } : null}
+        style={
+          designStyle === "light"
+            ? {
+                backgroundColor: `rgba(${parseInt(
+                  color.slice(1, 3),
+                  16
+                )}, ${parseInt(color.slice(4, 5), 16)}, ${parseInt(
+                  color.slice(5, 7),
+                  16
+                )}, 0.2)`,
+              }
+            : null
+        }
       />
       <label htmlFor="neubrutalism" />
     </>

@@ -6,6 +6,11 @@ import styles from "./IntroOptions.module.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import blob1 from "/imgs/blob1.svg";
+import blob2 from "/imgs/blob2.svg";
+import blob3 from "/imgs/blob3.svg";
+import blob4 from "/imgs/blob4.svg";
+
 export default function IntroOptions({ icon, title }) {
   const designStyle = useSelector((state) => state.design.design);
   const [color, setColor] = useState(
@@ -36,7 +41,9 @@ export default function IntroOptions({ icon, title }) {
             ? styles.matrixHover
             : null
         }`}
-        style={designStyle === "light" ? { color: color } : null}
+        style={{
+          color: designStyle === "light" ? color : undefined, // Aplica el color del texto si es necesario
+        }}
       />
       <p>{title}</p>
     </NavLink>
