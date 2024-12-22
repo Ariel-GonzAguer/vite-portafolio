@@ -35,9 +35,11 @@
 }
 
 /* light */
-/* .light {
-  animation: alternateBackgrounds 10s infinite;
-} */
+.light {
+  &:hover {
+    transform: rotate(360deg);
+  }
+}
 
 /* dark */
 .matrixHover {

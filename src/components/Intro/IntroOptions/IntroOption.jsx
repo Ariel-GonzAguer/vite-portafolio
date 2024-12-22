@@ -6,11 +6,6 @@ import styles from "./IntroOptions.module.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import blob1 from "/imgs/blob1.svg";
-import blob2 from "/imgs/blob2.svg";
-import blob3 from "/imgs/blob3.svg";
-import blob4 from "/imgs/blob4.svg";
-
 export default function IntroOptions({ icon, title }) {
   const designStyle = useSelector((state) => state.design.design);
   const [color, setColor] = useState(
@@ -28,6 +23,7 @@ export default function IntroOptions({ icon, title }) {
 
       return () => clearInterval(interval);
     }
+    console.log(designStyle);
   }, [designStyle]);
 
   return (
@@ -39,6 +35,8 @@ export default function IntroOptions({ icon, title }) {
             ? styles.pinkHover
             : designStyle === "dark"
             ? styles.matrixHover
+            : designStyle === "light"
+            ? styles.light
             : null
         }`}
         style={{

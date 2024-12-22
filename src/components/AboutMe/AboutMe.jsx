@@ -35,8 +35,8 @@ export default function AboutMe() {
           </a>
           .
           <br />
-          <br />I have knowledge in unit testing with Jest and
-          React-Testing-Library, I use Git Bash without problems when creating
+          <br />I have knowledge in unit testing with Vitest and
+          Testing Library, I use Git Bash without problems when creating
           projects and uploading them to Github, I also know how to work with
           third-parties APIs, and I'm learning more about Authentication. In
           addition to the above, I have obtained certificates in <a href="https://www.codecademy.com/profiles/ArieGonzAguer/certificates/d3bba2db294547af98049749763af329" target="_blank">Design
